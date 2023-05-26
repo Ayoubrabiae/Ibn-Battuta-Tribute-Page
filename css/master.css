@@ -157,7 +157,6 @@ img {
   display: inline;
 }
 
-.about .text a {}
 
 .about .image {
   order: -1;
@@ -171,8 +170,6 @@ img {
   }
 }
 
-.about .image img {}
-
 footer {
   padding: var(--pad) 0;
   background-color: var(--text-color);
@@ -180,8 +177,6 @@ footer {
   font-size: 20px;
   text-align: center;
 }
-
-footer .container {}
 
 footer .lang {
   --trans: 0;
@@ -217,8 +212,6 @@ footer .lang::before {
   -ms-transform: translateX(var(--trans));
   -o-transform: translateX(var(--trans));
 }
-
-footer p {}
 
 footer p span {
   color: var(--acent-color);
