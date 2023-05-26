@@ -3,7 +3,7 @@ let landing = document.querySelector(".landing");
 
 const changeBg = () => {
   let randomNum = Math.ceil(Math.random() * 6);
-  landing.style.backgroundImage = `url("../media/bg${randomNum}.jpg")`;
+  landing.style.backgroundImage = `url("media/bg${randomNum}.jpg")`;
 };
 
 setInterval(changeBg, 10000);
@@ -40,10 +40,12 @@ langBtns.forEach((e) => {
     if (e.id == "en") {
       lang.style.setProperty("--trans", "-100%");
       readMoreBtn.href = "https://en.wikipedia.org/wiki/Ibn_Battuta";
+      document.body.style.textAlign = "left";
     } else {
       lang.style.setProperty("--trans", "0");
       readMoreBtn.href =
         "https://en.wikipedia.org/wiki/https://ar.wikipedia.org/wiki/%D8%A7%D8%A8%D9%86_%D8%A8%D8%B7%D9%88%D8%B7%D8%A9";
+      document.body.style.textAlign = "right";
     }
     quote.textContent = translations.hero_section_quote[e.id];
     quoteOwner.textContent = translations.quote_owner[e.id];
